@@ -3,9 +3,10 @@ import { dirname } from "node:path";
 
 const OUTPUT = "/output/entry.txt";
 
-// v1: a plain observation about a meeting that outlives its project.
+// v2: sharpened - a specific month, a dead project, and the calendar
+// invite itself becomes the boss, demanding goals in the final words.
 const joke =
-  "Our weekly meeting kept going after the project ended, and now nobody knows how to stop it from happening every Monday morning.";
+  "The project died in March, but its weekly standup didn't - now it's just me on a call with a calendar invite demanding my Q3 goals.";
 
 mkdirSync(dirname(OUTPUT), { recursive: true });
 writeFileSync(OUTPUT, joke, "utf8");
